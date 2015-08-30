@@ -36,8 +36,7 @@ public:
 
 		while (std::getline(players, line))
 		{
-			std::cout << line << std::endl;
-			results[line] = ": Fish";
+			results[line] = generateTeam();
 			numPlayers++;
 		}
 
@@ -50,12 +49,25 @@ public:
 	void saveFile()
 	{
 		//Placeholder code until output is done		
+		std::ofstream data;
+		data.open("Results.txt");
+		std::string s;
 		for (auto& it = results.begin(); it != results.end(); it++)
 		{
-			std::cout << it->first << "" << it->second << std::endl;
+			s = it->first + it->second + "\n";
+			data.write(s.c_str(), s.size());
 		}
+		data.close();
 	}
 
+private:
+	std::string generateTeam()
+	{
+		std::string team = ": Fish";
+		//do random thing here and return the team
+
+		return team;
+	}
 
 	int numTeams;
 	int numPlayers;
@@ -81,6 +93,6 @@ int main(int argc, char** argv)
 	InfoLoader info(teamFileName, playersFileName);
 	info.saveFile();
 
-	
+	delete[] s;
 	return 0;
 }
