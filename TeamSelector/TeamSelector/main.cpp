@@ -37,8 +37,18 @@ public:
 		{
 			numPlayers++;
 		}
+
+		teams.close();
+		players.close();
 		//TODO choose the best container for the teams and the players
 
+	}
+
+	void saveFile()
+	{
+		//Placeholder code until output is done
+		std::cout << "Number of Teams = " << numTeams <<
+			", Number of Players = " << numPlayers << std::endl;
 	}
 
 
@@ -63,8 +73,7 @@ int main(int argc, char** argv)
 	std::string playersFileName = s;
 
 	InfoLoader info(teamFileName, playersFileName);
-	std::cout << "Number of Teams = " << info.numTeams <<
-		", Number of Players = " << info.numPlayers << std::endl;
+	info.saveFile();
 
 	std::cin >> s;
 	return 0;
