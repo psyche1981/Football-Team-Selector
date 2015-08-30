@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <unordered_map>
 
 class InfoLoader
 {
@@ -35,6 +36,8 @@ public:
 
 		while (std::getline(players, line))
 		{
+			std::cout << line << std::endl;
+			results[line] = ": Fish";
 			numPlayers++;
 		}
 
@@ -46,14 +49,17 @@ public:
 
 	void saveFile()
 	{
-		//Placeholder code until output is done
-		std::cout << "Number of Teams = " << numTeams <<
-			", Number of Players = " << numPlayers << std::endl;
+		//Placeholder code until output is done		
+		for (auto& it = results.begin(); it != results.end(); it++)
+		{
+			std::cout << it->first << "" << it->second << std::endl;
+		}
 	}
 
 
 	int numTeams;
 	int numPlayers;
+	std::unordered_map<std::string, std::string> results;
 };
 
 
@@ -75,6 +81,6 @@ int main(int argc, char** argv)
 	InfoLoader info(teamFileName, playersFileName);
 	info.saveFile();
 
-	std::cin >> s;
+	
 	return 0;
 }
