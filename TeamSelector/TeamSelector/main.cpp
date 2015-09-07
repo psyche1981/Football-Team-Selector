@@ -73,7 +73,6 @@ private:
 		numTeams--;
 		team = teamsMap[teamPick];
 		teamsMap[teamPick].erase();
-
 		return team;
 	}
 
@@ -87,24 +86,33 @@ private:
 
 int main(int argc, char** argv)
 {
-	std::cout << "Please make sure there are two .txt files int he same directory as the executable, "<<
-		std::endl << "one containing Teams and the other containing the names of the people in the round." << std::endl <<
-	"Enter the file name (including extension) of the file containing the list of teams" << std::endl;
-
 	char* s = new char[100];
+
+	std::cout << "****************************************************************" << std::endl;
+	std::cout << "*                   Random Football Team Selector              *" << std::endl;
+	std::cout << "*                                                              *" << std::endl;
+	std::cout << "* Please make sure there are two .txt files in the same        *" << std::endl;
+	std::cout << "* directory as the executable, one containing sports teams     *" << std::endl; 
+	std::cout << "* and the other containing the names of people in the round.   *" << std::endl;
+	std::cout << "*                                                              *" << std::endl;
+	std::cout << "*                     ---------------------------              *" << std::endl;
+	std::cout << "*           Enter the file name of the list of teams           *" << std::endl;
+	std::cout << "*          ";
 	std::cin >> s;
 	std::string teamFileName = s;
-	
-	std::cout << "Please enter the file name (including extension) of" <<
-		" the file containing the list of Sports Blackjack players" << std::endl;
+	std::cout << std::endl;
+	std::cout << "*                     ---------------------------              *" << std::endl;
+	std::cout << "* Enter the file name of the list of Sports Blackjack players  *" << std::endl;
+	std::cout << "*          ";
 	std::cin >> s;
 	std::string playersFileName = s;
-
+	std::cout << std::endl;
 	InfoLoader info;
 	if(info.init(teamFileName, playersFileName) == 0)
 		info.saveFile();
 
-	system("PAUSE");
+	std::cout << "* Generating a completely fair set of results......            *" << std::endl;
+	std::cin.get();
 	delete[] s;
 	return 0;
 }

@@ -1,11 +1,10 @@
-Bob McBobbo: Millwall
-Darius Barkunas: Aston Villa
-Gavin Harrison: Birmingham City
-Howard Johnson: Ross County
-Jim Bolton: Fulham
-John Lambert: Fleetwood Town
-Lewis Morland: Dundee
-Minde Abramovas: Carlisle United
-Nigel Scaife: Rochdale
-Simon Jones: Stevenage
-Tim wells: Norwich City
+Darius Barkunas: Oldham Athletic
+Gavin Harrison: West Bromwich Albion
+Howard Johnson: Dundee
+Jim Bolton: AFC Bournemouth
+John Lambert: Southend United
+Lewis Morland: Manchester City
+Minde Abramovas: Montrose
+Nigel Scaife: Doncaster Rovers
+Simon Jones: Notts County
+Tim Wells: Everton
