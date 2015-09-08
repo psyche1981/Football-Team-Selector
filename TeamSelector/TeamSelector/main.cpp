@@ -54,11 +54,9 @@ public:
 	{
 		std::ofstream data;
 		data.open("Results.txt");
-		std::string s;
 		for (auto& it = results.begin(); it != results.end(); it++)
 		{			
-			s = it->first + ": " + it->second + "\n";
-			data.write(s.c_str(), s.size());
+			data << it->first << ": " << it->second << "\n";
 		}
 		data.close();
 	}
