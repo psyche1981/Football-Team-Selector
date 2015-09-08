@@ -72,25 +72,26 @@ private:
 	{
 		std::string team = "";
 		static std::mt19937 randomEngine((unsigned int)time(nullptr));
-		static std::uniform_int_distribution<int> roll(1, numTeams);		
-		int teamPick = roll(randomEngine);
-
+		static std::uniform_int_distribution<int> roll(1, numTeams);
 		bool picked = false;
-		for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
+		int teamPick;
+		while (!picked)
 		{
-			if (*it == teamPick)
+			teamPick = roll(randomEngine);
+			if (prevPicks.empty())
+			{
 				picked = true;
+			}
+			for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
+			{
+				if (*it == teamPick)
+					picked = true;
+			}
+			
 		}
-		if (!picked)
-		{
-			prevPicks.push_back(teamPick);
-			team = teamsMap[teamPick];
-			teamsMap[teamPick].erase();
-		}
-		else
-		{
-			generateTeam();
-		}		
+		prevPicks.push_back(teamPick);
+		team = teamsMap[teamPick];
+		teamsMap[teamPick].erase();		
 		return team;
 	}
 
