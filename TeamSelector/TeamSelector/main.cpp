@@ -4,6 +4,7 @@
 #include <map>
 #include <random>
 #include <ctime>
+#include <vector>
 
 class InfoLoader
 {
@@ -59,6 +60,11 @@ public:
 			data << it->first << ": " << it->second << "\n";
 		}
 		data.close();
+
+		for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
+		{			
+			std::cout << *it << std::endl;
+		}
 	}
 	
 private:
@@ -66,11 +72,25 @@ private:
 	{
 		std::string team = "";
 		static std::mt19937 randomEngine((unsigned int)time(nullptr));
-		static std::uniform_int_distribution<int> roll(1, numTeams);
+		static std::uniform_int_distribution<int> roll(1, numTeams);		
 		int teamPick = roll(randomEngine);
-		numTeams--;
-		team = teamsMap[teamPick];
-		teamsMap[teamPick].erase();
+
+		bool picked = false;
+		for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
+		{
+			if (*it == teamPick)
+				picked = true;
+		}
+		if (!picked)
+		{
+			prevPicks.push_back(teamPick);
+			team = teamsMap[teamPick];
+			teamsMap[teamPick].erase();
+		}
+		else
+		{
+			generateTeam();
+		}		
 		return team;
 	}
 
@@ -78,6 +98,7 @@ private:
 	int numPlayers;
 	std::map<std::string, std::string> results;
 	std::map<int, std::string> teamsMap;
+	std::vector<int> prevPicks;
 };
 	
 
