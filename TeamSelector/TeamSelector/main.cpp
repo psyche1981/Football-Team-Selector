@@ -112,7 +112,7 @@ int main(int argc, char** argv)
 		info.saveFile();
 
 	std::cout << "* Generating a completely fair set of results......            *" << std::endl;
-	std::cin.get();
+	std::cin >> s;
 	delete[] s;
 	return 0;
 }
