@@ -29,5 +29,8 @@
     <Text Include="Teams.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="debuggery\DebugInfo.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

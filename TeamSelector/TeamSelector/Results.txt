@@ -1,10 +1,50 @@
-Darius Barkunas: Alloa Athletic
-Gavin Harrison: Manchester City
-Howard Johnson: West Ham United
-Jim Bolton: West Bromwich Albion
-John Lambert: Gillingham
-Lewis Morland: Stirling Albion
-Minde Abramovas: Swansea City
-Nigel Scaife: Norwich City
-Simon Jones: Rotherham United
-Tim Wells: Southampton
+***Team generated # 1 ***
+roll: 43
+Team: Sheffield Wednesday
+
+***Team generated # 2 ***
+roll: 111
+Team: Raith Rovers
+
+***Team generated # 3 ***
+roll: 31
+Team: Fulham
+
+***Team generated # 4 ***
+roll: 28
+Team: Cardiff City
+
+***Team generated # 5 ***
+roll: 48
+Team: Burton Albion
+
+***Team generated # 6 ***
+roll: 28
+Team: 
+
+***Team generated # 7 ***
+roll: 23
+Team: Bolton Wanderers
+
+***Team generated # 8 ***
+roll: 91
+Team: Yeovil Town
+
+***Team generated # 9 ***
+roll: 30
+Team: Derby County
+
+***Team generated # 10 ***
+roll: 122
+Team: Stenhousemuir
+
+Darius Barkunas: Yeovil Town
+Gavin Harrison: Cardiff City
+Howard Johnson: Bolton Wanderers
+Jim Bolton: Fulham
+John Lambert: Raith Rovers
+Lewis Morland: Stenhousemuir
+Minde Abramovas: Derby County
+Nigel Scaife: 
+Simon Jones: Sheffield Wednesday
+Tim Wells: Burton Albion

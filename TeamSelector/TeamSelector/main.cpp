@@ -15,6 +15,7 @@ public:
 	{
 		numTeams = 0;
 		numPlayers = 0;
+		data.open("debuggery/DebugInfo.txt");
 
 		std::ifstream teams;
 		teams.open(TeamsFileName);
@@ -52,25 +53,27 @@ public:
 
 	void saveFile()
 	{		
-		data.open("Results.txt");
 		for (auto& it = results.begin(); it != results.end(); it++)
 		{						
 			data << it->first << ": " << it->second << "\n";
 		}
-		
-		data.close();
 	}
 	
 private:
 	std::string generateTeam()
 	{
+		data << "***" << "Team generated # " << genTeamCount << " ***\n";
 		std::string team = "";
 		static std::mt19937 randomEngine((unsigned int)time(nullptr));
 		static std::uniform_int_distribution<int> roll(1, numTeams);
 		int teamPick = roll(randomEngine);
+		data << "roll: " << teamPick << "\n";
 		numTeams--;
 		team = teamsMap[teamPick];
+		data << "Team: " << team << "\n";
 		teamsMap[teamPick].erase();
+		genTeamCount++;
+		data << "\n";
 		return team;
 	}
 
@@ -79,6 +82,7 @@ private:
 	std::map<std::string, std::string> results;
 	std::map<int, std::string> teamsMap;
 	std::ofstream data;
+	int genTeamCount = 1;
 };
 
 class Debuggery

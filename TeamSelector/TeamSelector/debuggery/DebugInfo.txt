@@ -1,0 +1,50 @@
+***Team generated # 1 ***
+roll: 76
+Team: Dagenham & Redbridge
+
+***Team generated # 2 ***
+roll: 5
+Team: Crystal Palace
+
+***Team generated # 3 ***
+roll: 89
+Team: Stevenage
+
+***Team generated # 4 ***
+roll: 97
+Team: Hamilton Academical
+
+***Team generated # 5 ***
+roll: 26
+Team: Bristol City
+
+***Team generated # 6 ***
+roll: 51
+Team: Colchester United
+
+***Team generated # 7 ***
+roll: 61
+Team: Rochdale
+
+***Team generated # 8 ***
+roll: 103
+Team: St. Johnstone
+
+***Team generated # 9 ***
+roll: 1
+Team: AFC Bournemouth
+
+***Team generated # 10 ***
+roll: 17
+Team: Tottenham Hotspur
+
+Darius Barkunas: St. Johnstone
+Gavin Harrison: Hamilton Academical
+Howard Johnson: Rochdale
+Jim Bolton: Stevenage
+John Lambert: Crystal Palace
+Lewis Morland: Tottenham Hotspur
+Minde Abramovas: AFC Bournemouth
+Nigel Scaife: Colchester United
+Simon Jones: Dagenham & Redbridge
+Tim Wells: Bristol City
