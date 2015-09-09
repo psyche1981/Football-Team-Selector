@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <fstream>
 #include <string>
 #include <map>
@@ -12,11 +13,14 @@ public:
 	InfoLoader()
 	{}
 
-	int init(const std::string& TeamsFileName, const std::string& PlayersFileName)
-	{
+	int init(const std::string& TeamsFileName, const std::string& PlayersFileName, int index)
+	{		
 		numTeams = 0;
 		numPlayers = 0;
-		data.open("debuggery/DebugInfo.txt");
+		std::stringstream ssrm; 
+		ssrm << "debuggery/DebugInfo" << index << ".txt";
+		std::string fileName = ssrm.str();
+		data.open(fileName);
 
 		std::ifstream teams;
 		teams.open(TeamsFileName);
@@ -58,6 +62,7 @@ public:
 		{						
 			data << it->first << ": " << it->second << "\n";
 		}
+		data.close();
 	}
 	
 private:
@@ -104,6 +109,16 @@ private:
 class Debuggery
 {
 public:
+	Debuggery(int counter)
+	{
+		InfoLoader info;
+		for (int i = 0; i < counter; i++)
+		{
+			if (info.init("Teams.txt", "Players.txt", i + 1) == 0)
+				info.saveFile();
+		}
+		
+	}
 
 private:
 };
@@ -112,9 +127,10 @@ private:
 
 int main(int argc, char** argv)
 {
-	InfoLoader info;
-	if(info.init("Teams.txt", "Players.txt") == 0)
-		info.saveFile();
+	int counter = 0;
+	std::cout << "How many times do you want to run the team selector?" << std::endl;
+	std::cin >> counter;
+	Debuggery dBug(counter);
 
 	std::cout << "* Generating a completely fair set of results......            *" << std::endl;
 	std::cin.get();

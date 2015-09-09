@@ -80,7 +80,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="debuggery\DebugInfo.txt" />
     <Text Include="Players.txt" />
     <Text Include="Results.txt" />
     <Text Include="Teams.txt" />
