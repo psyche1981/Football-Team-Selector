@@ -62,6 +62,7 @@ public:
 		{						
 			data << it->first << ": " << it->second << "\n";
 		}
+		prevPicks.clear();
 		data.close();
 	}
 	
