@@ -78,14 +78,15 @@ private:
 		while (!picked)
 		{
 			teamPick = roll(randomEngine);
-			if (prevPicks.empty())
-			{
-				picked = true;
-			}
+			picked = true;			
 			for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
 			{
 				if (*it == teamPick)
-					picked = true;
+				{
+					picked = false;
+					continue;
+				}
+					
 			}
 			
 		}

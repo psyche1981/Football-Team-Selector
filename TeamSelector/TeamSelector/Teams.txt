@@ -8,3 +8,96 @@ Leicester City
 Liverpool
 Manchester City
 Manchester United
+Newcastle United
+Norwich City
+Southampton
+Stoke City
+Sunderland
+Swansea City
+Tottenham Hotspur
+Watford
+West Bromwich Albion
+West Ham United
+Birmingham City
+Blackburn Rovers
+Bolton Wanderers
+Brentford
+Brighton & Hove Albion
+Bristol City
+Burnley
+Cardiff City
+Charlton Athletic
+Derby County
+Fulham
+Huddersfield Town
+Hull City
+Ipswich Town
+Leeds United
+Middlesbrough
+Milton Keynes Dons
+Nottingham Forest
+Preston North End
+Queens Park Rangers
+Reading
+Rotherham United
+Sheffield Wednesday
+Wolverhampton Wanderers
+Barnsley
+Blackpool
+Bradford City
+Burton Albion
+Bury
+Chesterfield
+Colchester United
+Coventry City
+Crewe Alexandra
+Doncaster Rovers
+Fleetwood Town
+Gillingham
+Millwall
+Oldham Athletic
+Peterborough United
+Port Vale
+Rochdale
+Scunthorpe United
+Sheffield United
+Shrewsbury Town
+Southend United
+Swindon Town
+Walsall
+Wigan Athletic
+Accrington Stanley
+AFC Wimbledon
+Barnet
+Bristol Rovers
+Cambridge United
+Carlisle United
+Crawley Town
+Dagenham & Redbridge
+Exeter City
+Hartlepool United
+Leyton Orient 
+Luton
+Mansfield Town
+Morecambe
+Newport County
+Northampton Town
+Notts County
+Oxford United
+Plymouth Argyle
+Portsmouth
+Stevenage
+Wycombe Wanderers
+Yeovil Town
+York City
+Aberdeen
+Celtic
+Dundee
+Dundee United
+Hamilton Academical
+Heart of Midlothian
+Inverness CT
+Kilmarnock
+Partick Thistle
+Ross County
+St. Johnstone
