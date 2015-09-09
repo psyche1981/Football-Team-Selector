@@ -60,11 +60,6 @@ public:
 			data << it->first << ": " << it->second << "\n";
 		}
 		data.close();
-
-		for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
-		{			
-			std::cout << *it << std::endl;
-		}
 	}
 	
 private:
@@ -85,10 +80,8 @@ private:
 				{
 					picked = false;
 					continue;
-				}
-					
-			}
-			
+				}					
+			}			
 		}
 		prevPicks.push_back(teamPick);
 		team = teamsMap[teamPick];
@@ -132,7 +125,8 @@ int main(int argc, char** argv)
 	if(info.init(teamFileName, playersFileName) == 0)
 		info.saveFile();
 
-	std::cout << "* Generating a completely fair set of results......            *" << std::endl;
+	std::cout << "* Generating a completely fair set of results......            *" << std::endl << std::endl;
+	std::cout << "* Press 'e' to exit" << std::endl;
 	std::cin >> s;
 	delete[] s;
 	return 0;
