@@ -1,50 +1,50 @@
 ***Team generated # 1 ***
-roll: 76
-Team: Dagenham & Redbridge
+roll: 74
+Team: Carlisle United
 
 ***Team generated # 2 ***
-roll: 5
-Team: Crystal Palace
+roll: 42
+Team: Rotherham United
 
 ***Team generated # 3 ***
-roll: 89
-Team: Stevenage
-
-***Team generated # 4 ***
-roll: 97
-Team: Hamilton Academical
-
-***Team generated # 5 ***
 roll: 26
 Team: Bristol City
 
+***Team generated # 4 ***
+roll: 57
+Team: Millwall
+
+***Team generated # 5 ***
+roll: 31
+Team: Fulham
+
 ***Team generated # 6 ***
-roll: 51
-Team: Colchester United
+roll: 88
+Team: Portsmouth
 
 ***Team generated # 7 ***
-roll: 61
-Team: Rochdale
+roll: 112
+Team: Rangers
 
 ***Team generated # 8 ***
-roll: 103
-Team: St. Johnstone
+roll: 102
+Team: Ross County
 
 ***Team generated # 9 ***
-roll: 1
-Team: AFC Bournemouth
+roll: 33
+Team: Hull City
 
 ***Team generated # 10 ***
-roll: 17
-Team: Tottenham Hotspur
+roll: 4
+Team: Chelsea
 
-Darius Barkunas: St. Johnstone
-Gavin Harrison: Hamilton Academical
-Howard Johnson: Rochdale
-Jim Bolton: Stevenage
-John Lambert: Crystal Palace
-Lewis Morland: Tottenham Hotspur
-Minde Abramovas: AFC Bournemouth
-Nigel Scaife: Colchester United
-Simon Jones: Dagenham & Redbridge
-Tim Wells: Bristol City
+Darius Barkunas: Ross County
+Gavin Harrison: Millwall
+Howard Johnson: Rangers
+Jim Bolton: Bristol City
+John Lambert: Rotherham United
+Lewis Morland: Chelsea
+Minde Abramovas: Hull City
+Nigel Scaife: Portsmouth
+Simon Jones: Carlisle United
+Tim Wells: Fulham

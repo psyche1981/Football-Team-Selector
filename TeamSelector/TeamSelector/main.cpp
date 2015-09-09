@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include <random>
+#include <vector>
 #include <ctime>
 
 class InfoLoader
@@ -66,9 +67,23 @@ private:
 		std::string team = "";
 		static std::mt19937 randomEngine((unsigned int)time(nullptr));
 		static std::uniform_int_distribution<int> roll(1, numTeams);
-		int teamPick = roll(randomEngine);
-		data << "roll: " << teamPick << "\n";
-		numTeams--;
+		bool picked = false;
+		int teamPick;
+		while (!picked)
+		{
+			teamPick = roll(randomEngine);
+			data << "roll: " << teamPick << "\n";
+			picked = true;
+			for (auto& it = prevPicks.begin(), end = prevPicks.end(); it != end; it++)
+			{
+				if (*it == teamPick)
+				{
+					picked = false;
+					continue;
+				}
+			}
+		}
+		prevPicks.push_back(teamPick);
 		team = teamsMap[teamPick];
 		data << "Team: " << team << "\n";
 		teamsMap[teamPick].erase();
@@ -81,6 +96,7 @@ private:
 	int numPlayers;
 	std::map<std::string, std::string> results;
 	std::map<int, std::string> teamsMap;
+	std::vector<int> prevPicks;
 	std::ofstream data;
 	int genTeamCount = 1;
 };
